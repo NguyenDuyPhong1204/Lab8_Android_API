@@ -19,6 +19,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".Add_Teacher"
+            android:exported="false" />
+        <activity
+            android:name=".Update_Teacher"
+            android:exported="false" />
+        <activity
             android:name=".Update_SinhVien"
             android:exported="false" />
         <activity

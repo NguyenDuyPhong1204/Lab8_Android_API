@@ -13,16 +13,32 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Sinh viên"
+        android:text="Teacher"
         android:textSize="30dp"
         android:textStyle="bold" />
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:hint="Tìm kiếm giáo viên"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="5dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rcv_sinhVien"
+            android:id="@+id/rcv_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -34,7 +50,6 @@
             android:layout_gravity="bottom|end"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
-            android:src="@drawable/ic_add"
-            />
+            android:src="@drawable/ic_add" />
     </FrameLayout>
 </LinearLayout>
